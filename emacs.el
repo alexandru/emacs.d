@@ -13,6 +13,10 @@
 (load-file "~/.emacs.d/customizations.el")
 
 (load-file "~/.emacs.d/my-packages/yasnippets/load.el")
-(load-file "~/.emacs.d/my-packages/nxhtml/load.el")
+(load-file "~/.emacs.d/my-packages/nxhtml-mode/load.el")
+(load-file "~/.emacs.d/my-packages/flymake-mode/load.el")
+(load-file "~/.emacs.d/my-packages/python-mode/load.el")
+(load-file "~/.emacs.d/my-packages/yaml-mode/load.el")
+(load-file "~/.emacs.d/my-packages/javascript-mode/load.el")
 
 

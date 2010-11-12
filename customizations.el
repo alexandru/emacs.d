@@ -9,7 +9,6 @@
 
 (global-set-key "\M-Q" 'unfill-paragraph)
 
-
 ;; set indenting stuff for a whole buch of C-ish languages
 
 (let ((c-stuff (function (lambda ()
@@ -54,3 +53,19 @@
 
 (require 'color-theme)
 (color-theme-dark-laptop)
+
+;; recent files 
+
+(require 'recentf)
+(recentf-mode 1)
+(setq recentf-max-menu-items 25)
+(global-set-key "\C-x\ \C-r" 'recentf-open-files)
+
+;; settings for graphical mode
+
+(tool-bar-mode nil)
+; interacts with the OS clipboard
+(setq x-select-enable-clipboard t)
+
+
+
