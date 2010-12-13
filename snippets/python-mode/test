@@ -1,0 +1,15 @@
+from django.test import TestCase
+from django.test.client import Client
+
+class UserHandlerTest(TestCase):
+    fixtures = ['auth.json']
+
+    def setUp(self):
+        self.client = Client()
+        self.client.login(username='admin', password='parola')
+
+    def test_${1:method}(self):
+        c = self.client
+        
+        $0
+      

@@ -18,5 +18,8 @@
 (load-file "~/.emacs.d/my-packages/python-mode/load.el")
 (load-file "~/.emacs.d/my-packages/yaml-mode/load.el")
 (load-file "~/.emacs.d/my-packages/javascript-mode/load.el")
+(load-file "~/.emacs.d/my-packages/ruby-mode/load.el")
+(load-file "~/.emacs.d/my-packages/rails-mode/load.el")
+(load-file "~/.emacs.d/my-packages/django/load.el")
 
 

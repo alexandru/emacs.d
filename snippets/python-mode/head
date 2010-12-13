@@ -1,0 +1,10 @@
+#name : Light python header
+# --
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+__author__    = "Alexandru Nedelcu"
+__email__     = "alex@magnolialabs.com"
+__copyright__ = "Copyright 2010, Magnolia Labs Inc."
+
+$0
