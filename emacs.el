@@ -23,5 +23,6 @@
 (load-file "~/.emacs.d/my-packages/django/load.el")
 (load-file "~/.emacs.d/my-packages/coffee-mode/load.el")
 (load-file "~/.emacs.d/my-packages/nxhtml-mode/load.el")
+(load-file "~/.emacs.d/my-packages/scala-mode/load.el")
 
 
