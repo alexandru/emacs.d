@@ -5,7 +5,7 @@
 
 (defun csharp-custom ()
   "csharp-mode-hook"
- (setq c-basic-offset 8)
+ (setq c-basic-offset 4)
  (c-set-offset 'substatement-open 0))
 
 (add-hook 'csharp-mode-hook

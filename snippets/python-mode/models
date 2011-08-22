@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 
 __author__    = "Alexandru Nedelcu"
-__email__     = "contact@alexn.org"
+__email__     = "alex@magnolialabs.com"
+__copyright__ = "Magnolia Labs, Inc."
 
 
 from django.db import models
