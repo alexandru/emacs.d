@@ -1,0 +1,19 @@
+#name : Light python header
+# --
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+__author__    = "Alexandru Nedelcu"
+__email__     = "alex@magnolialabs.com"
+__copyright__ = "Magnolia Labs, Inc."
+
+from django.shortcuts import render_to_response, redirect, get_object_or_404
+from django.contrib.admin.views.decorators import staff_member_required
+from django.http import HttpResponse
+from django.template  import RequestContext, Template, Context
+from django.core.urlresolvers import reverse
+from django.db import transaction, connection 
+from django.utils.safestring import mark_safe
+
+
+$0

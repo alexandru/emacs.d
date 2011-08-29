@@ -49,6 +49,14 @@
 
 (global-set-key [f5] 'kmacro-end-and-call-macro)
 
+(setq-default truncate-lines t)
+
+(global-set-key (kbd "S-C-<left>") 'shrink-window-horizontally)
+(global-set-key (kbd "S-C-<right>") 'enlarge-window-horizontally)
+(global-set-key (kbd "S-C-<up>") 'shrink-window)
+(global-set-key (kbd "S-C-<down>") 'enlarge-window)
+
+
 ;; color mode
 
 (require 'color-theme)

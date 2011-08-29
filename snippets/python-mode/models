@@ -1,0 +1,14 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+__author__    = "Alexandru Nedelcu"
+__email__     = "alex@magnolialabs.com"
+__copyright__ = "Magnolia Labs, Inc."
+
+
+from django.db import models
+from django.db.models import Q
+from django.db import connection
+
+
+$0
