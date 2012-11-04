@@ -1,0 +1,10 @@
+package ${1:`(substring (replace-regexp-in-string "/" "." (replace-regexp-in-string ".*?/src/main/scala/\\\\|.*?/src/test/scala/" "" (file-name-directory (buffer-file-name)))) 0 -1)`}
+
+import org.scalatest.FunSuite
+import org.junit.runner.RunWith
+import org.scalatest.junit.JUnitRunner
+
+@RunWith(classOf[JUnitRunner])
+class ${2:`(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`} extends FunSuite {
+  $0
+}

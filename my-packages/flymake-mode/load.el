@@ -13,4 +13,4 @@
    (add-to-list 'flymake-allowed-file-name-masks
                 '("\\.py\\'" flymake-pylint-init)))
 
-(setenv "PYTHONPATH" "/home/alex/.virtualenvs/godzilla/lib/python2.6/site-packages/:/home/alex/Projects/magnolialabs/godzilla/godzillapi/")
+(setenv "PYTHONPATH" "/home/alex/.virtualenvs/godzilla/lib/python2.7/site-packages/:/home/alex/.virtualenvs/continental/lib/python2.7/site-packages/:/home/alex/Projects/magnolialabs/godzilla/:/home/alex/Projects/magnolialabs/godzilla/godzillapi/:/home/alex/Projects/magnolialabs/continental/:/home/alex/Projects/magnolialabs/continental/continental")

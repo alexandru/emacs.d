@@ -1,1 +1,0 @@
-(add-to-list 'auto-mode-alist '("\\.tpl.html$" . django-html-mumamo-mode))
