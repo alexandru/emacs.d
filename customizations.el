@@ -23,6 +23,7 @@
 ;; easy access to the customizations file
 
 (set-register ?e '(file . "~/.emacs.d/customizations.el"))
+(set-register ?s '(file . "~/.emacs.d/snippets"))
 
 ;; do not make backups
 

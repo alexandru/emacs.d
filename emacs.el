@@ -10,6 +10,7 @@
 
 (load-file "~/.emacs.d/customizations.el")
 
+(load-file "~/.emacs.d/my-packages/ido/load.el")
 (load-file "~/.emacs.d/my-packages/yasnippets/load.el")
 (load-file "~/.emacs.d/my-packages/clojure-mode/load.el")
 (load-file "~/.emacs.d/my-packages/flymake-mode/load.el")
@@ -17,6 +18,9 @@
 (load-file "~/.emacs.d/my-packages/javascript-mode/load.el")
 (load-file "~/.emacs.d/my-packages/ruby-mode/load.el")
 (load-file "~/.emacs.d/my-packages/coffee-mode/load.el")
+(load-file "~/.emacs.d/my-packages/scala-mode/load.el")
+(load-file "~/.emacs.d/my-packages/ensime/load.el")
+
 
 
 

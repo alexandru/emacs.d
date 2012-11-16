@@ -1,0 +1,1 @@
+models.BooleanField(blank=True, null=False, default=True)
