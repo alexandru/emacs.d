@@ -1,5 +1,3 @@
-(server-start)
-
 (add-to-list 'load-path "~/.emacs.d/elpa/")
 
 (require 'package)
@@ -20,6 +18,8 @@
 (load-file "~/.emacs.d/my-packages/coffee-mode/load.el")
 (load-file "~/.emacs.d/my-packages/scala-mode/load.el")
 (load-file "~/.emacs.d/my-packages/ensime/load.el")
+(load-file "~/.emacs.d/my-packages/yaml-mode/load.el")
+(load-file "~/.emacs.d/my-packages/markdown-mode/load.el")
 
 
 
