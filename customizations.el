@@ -61,9 +61,9 @@
 
 ;; color mode
 
-(require 'color-theme)
-(color-theme-initialize)
-(color-theme-dark-laptop)
+;(require 'color-theme)
+;(color-theme-initialize)
+;(color-theme-dark-laptop)
 
 ;; recent files 
 
@@ -74,7 +74,7 @@
 
 ;; settings for graphical mode
 
-(tool-bar-mode nil)
+; (tool-bar-mode nil)
 ; interacts with the OS clipboard
 (setq x-select-enable-clipboard t)
 
