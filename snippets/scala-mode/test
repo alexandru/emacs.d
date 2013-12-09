@@ -1,3 +1,9 @@
-test("${1:description}") {
-  $0			 
+# -*- mode: snippet -*-
+#Author : Jonas Bonèr <jonas@jonasboner.com>
+#name : @Test def testX = ...
+# key: test
+# --
+//@Test
+def test${1:name} = {
+  $0
 }

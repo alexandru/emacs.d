@@ -74,7 +74,8 @@
 
 ;; settings for graphical mode
 
-; (tool-bar-mode nil)
+(tool-bar-mode -1)
+
 ; interacts with the OS clipboard
 (setq x-select-enable-clipboard t)
 
@@ -95,3 +96,5 @@
   "Delete duplicate lines in buffer and keep first occurrence."
   (interactive "*")
   (uniquify-all-lines-region (point-min) (point-max)))
+
+
