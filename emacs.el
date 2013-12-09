@@ -9,8 +9,11 @@
 
 (load-file "~/.emacs.d/customizations.el")
 
+(load-file "~/.emacs.d/settings/color-theme/load.el")
+(load-file "~/.emacs.d/settings/org-mode/load.el")
 (load-file "~/.emacs.d/settings/yasnippets/load.el")
 (load-file "~/.emacs.d/settings/clojure-mode/load.el")
+(load-file "~/.emacs.d/settings/scala-mode2/load.el")
 
 
 

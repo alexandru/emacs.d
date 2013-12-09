@@ -1,4 +1,5 @@
 (when (not (package-installed-p 'yasnippet))
+  (package-refresh-contents)
   (package-install 'yasnippet))
 
 (require 'yasnippet)

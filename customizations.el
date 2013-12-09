@@ -24,6 +24,7 @@
 
 (set-register ?e '(file . "~/.emacs.d/customizations.el"))
 (set-register ?s '(file . "~/.emacs.d/snippets"))
+(set-register ?o '(file . "~/Cloud/Private/Org/help.txt"))
 
 ;; do not make backups
 
@@ -57,13 +58,6 @@
 (global-set-key (kbd "S-C-<right>") 'enlarge-window-horizontally)
 (global-set-key (kbd "S-C-<up>") 'shrink-window)
 (global-set-key (kbd "S-C-<down>") 'enlarge-window)
-
-
-;; color mode
-
-;(require 'color-theme)
-;(color-theme-initialize)
-;(color-theme-dark-laptop)
 
 ;; recent files 
 
