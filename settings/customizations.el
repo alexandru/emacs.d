@@ -22,7 +22,7 @@
 
 ;; easy access to the customizations file
 
-(set-register ?e '(file . "~/.emacs.d/customizations.el"))
+(set-register ?e '(file . "~/.emacs.d/settings"))
 (set-register ?s '(file . "~/.emacs.d/snippets"))
 (set-register ?o '(file . "~/Cloud/Private/Org/help.txt"))
 
@@ -46,18 +46,10 @@
 ;; editing improvements
 
 (global-set-key "\C-w" 'backward-kill-word)
-(global-set-key "\C-x\C-k" 'kill-region)
-(global-set-key "\C-c\C-k" 'kill-region)
 (global-set-key [C-tab] 'completion-at-point)
-
 (global-set-key [f5] 'kmacro-end-and-call-macro)
 
 (setq-default truncate-lines t)
-
-(global-set-key (kbd "S-C-<left>") 'shrink-window-horizontally)
-(global-set-key (kbd "S-C-<right>") 'enlarge-window-horizontally)
-(global-set-key (kbd "S-C-<up>") 'shrink-window)
-(global-set-key (kbd "S-C-<down>") 'enlarge-window)
 
 ;; recent files 
 
@@ -91,4 +83,6 @@
   (interactive "*")
   (uniquify-all-lines-region (point-min) (point-max)))
 
+;; finds file in project (root directory found by searching for .git)
 
+(global-set-key (kbd "C-t") 'find-file-in-project)
