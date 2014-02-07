@@ -24,7 +24,7 @@
 
 (set-register ?e '(file . "~/.emacs.d/settings"))
 (set-register ?s '(file . "~/.emacs.d/snippets"))
-(set-register ?o '(file . "~/Cloud/Private/Org/help.txt"))
+(set-register ?o '(file . "~/Cloud/Personal/Org/help.txt"))
 
 ;; do not make backups
 
