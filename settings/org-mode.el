@@ -5,6 +5,6 @@
 (setq org-log-done t)
 
 (setq org-agenda-files
-      (directory-files "~/Cloud/Personal/Org/" 1 "[.]org$"))
+      (directory-files "~/Google Drive/Personal/Org/" 1 "[.]org$"))
 
 

@@ -1,4 +1,5 @@
 (auto-fill-mode)
+(x-focus-frame nil)
 
 ;; revert filling (Alt + Q)
 
@@ -24,7 +25,7 @@
 
 (set-register ?e '(file . "~/.emacs.d/settings"))
 (set-register ?s '(file . "~/.emacs.d/snippets"))
-(set-register ?o '(file . "~/Cloud/Personal/Org/help.txt"))
+(set-register ?o '(file . "~/Google Drive/Personal/Org/help.txt"))
 
 ;; do not make backups
 
@@ -48,6 +49,7 @@
 (global-set-key "\C-w" 'backward-kill-word)
 (global-set-key [C-tab] 'completion-at-point)
 (global-set-key [f5] 'kmacro-end-and-call-macro)
+(global-set-key "\C-x\C-k" 'kill-region)
 
 (setq-default truncate-lines t)
 
@@ -86,3 +88,7 @@
 ;; finds file in project (root directory found by searching for .git)
 
 (global-set-key (kbd "C-t") 'find-file-in-project)
+
+;; use aspell for spell-checking instead of ispell
+
+(setq ispell-program-name "/opt/local/bin/aspell")
