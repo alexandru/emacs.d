@@ -1,5 +1,4 @@
 (auto-fill-mode)
-(x-focus-frame nil)
 
 ;; revert filling (Alt + Q)
 
@@ -63,6 +62,7 @@
 ;; settings for graphical mode
 
 (tool-bar-mode -1)
+(menu-bar-mode 1)
 
 ; interacts with the OS clipboard
 (setq x-select-enable-clipboard t)
