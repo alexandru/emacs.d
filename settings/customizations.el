@@ -84,10 +84,6 @@
   (interactive "*")
   (uniquify-all-lines-region (point-min) (point-max)))
 
-;; finds file in project (root directory found by searching for .git)
-
-(global-set-key (kbd "C-t") 'find-file-in-project)
-
 ;; use aspell for spell-checking instead of ispell
 
 (setq ispell-program-name "/opt/local/bin/aspell")
