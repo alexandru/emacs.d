@@ -5,3 +5,5 @@ places
 .*
 auto-save-list
 *.elc
+projectile-bookmarks.eld
+

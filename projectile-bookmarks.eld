@@ -1,1 +1,0 @@
-("~/Projects/eon/sally2/" "~/.emacs.d/" "~/Projects/org.monifu/monifu/" "~/.sbt/0.13/plugins/")

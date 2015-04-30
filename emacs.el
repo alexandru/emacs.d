@@ -5,6 +5,8 @@
 	     '("marmalade" . "http://marmalade-repo.org/packages/"))
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
+
+(unless package-archive-contents (package-refresh-contents))
 (package-initialize)
 
 ;(exec-path-from-shell-initialize)
@@ -16,6 +18,7 @@
 (load-file "~/.emacs.d/settings/clojure-mode.el")
 (load-file "~/.emacs.d/settings/scala-mode2.el")
 (load-file "~/.emacs.d/settings/typescript-mode.el")
+(load-file "~/.emacs.d/settings/fsharp-mode.el")
 
 
 
