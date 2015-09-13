@@ -6,7 +6,7 @@
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
-(unless package-archive-contents (package-refresh-contents))
+;(unless package-archive-contents (package-refresh-contents))
 (package-initialize)
 
 ;(exec-path-from-shell-initialize)
