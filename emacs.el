@@ -19,7 +19,3 @@
 (load-file "~/.emacs.d/settings/scala-mode2.el")
 (load-file "~/.emacs.d/settings/typescript-mode.el")
 (load-file "~/.emacs.d/settings/fsharp-mode.el")
-
-
-
-
