@@ -10,7 +10,6 @@
 (package-initialize)
 
 ;(exec-path-from-shell-initialize)
-
 (load-file "~/.emacs.d/settings/server.el")
 (load-file "~/.emacs.d/settings/customizations.el")
 (load-file "~/.emacs.d/settings/color-theme.el")
