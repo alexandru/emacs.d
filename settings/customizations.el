@@ -58,11 +58,6 @@
 (setq recentf-max-menu-items 25)
 (global-set-key "\C-x\ \C-r" 'recentf-open-files)
 
-;; settings for graphical mode
-
-(tool-bar-mode -1)
-(menu-bar-mode 1)
-
 ; interacts with the OS clipboard
 (setq x-select-enable-clipboard t)
 
