@@ -86,4 +86,4 @@
 
 ;; use aspell for spell-checking instead of ispell
 
-(setq ispell-program-name "/opt/local/bin/aspell")
+(setq ispell-program-name "aspell")
