@@ -10,7 +10,7 @@
 ;(exec-path-from-shell-initialize)
 (load-file "~/.emacs.d/settings/server.el")
 (load-file "~/.emacs.d/settings/customizations.el")
-(load-file "~/.emacs.d/settings/color-theme.el")
+(load-file "~/.emacs.d/settings/display.el")
 (load-file "~/.emacs.d/settings/yasnippets.el")
 (load-file "~/.emacs.d/settings/clojure-mode.el")
 (load-file "~/.emacs.d/settings/scala-mode2.el")
