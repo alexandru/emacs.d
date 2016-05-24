@@ -1,5 +1,11 @@
 (auto-fill-mode)
 
+;; fix rectangles in OS X
+;; http://stuff-things.net/2015/10/05/emacs-visible-bell-work-around-on-os-x-el-capitan/
+
+(setq visible-bell nil) ;; The default
+(setq ring-bell-function 'ignore)
+
 ;; revert filling (Alt + Q)
 
 (defun unfill-paragraph ()
