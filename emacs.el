@@ -16,4 +16,5 @@
 (load-file "~/.emacs.d/settings/yasnippets.el")
 (load-file "~/.emacs.d/settings/clojure-mode.el")
 (load-file "~/.emacs.d/settings/scala-mode.el")
+(load-file "~/.emacs.d/settings/haskell.el")
 
