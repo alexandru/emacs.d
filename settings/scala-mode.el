@@ -1,5 +1,4 @@
-(defvar scala-packages '(scala-mode
-                         ensime))
+(defvar scala-packages '(scala-mode ensime))
 
 (dolist (p scala-packages)
   (unless (package-installed-p p)
