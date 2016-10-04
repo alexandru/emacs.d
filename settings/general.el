@@ -1,4 +1,5 @@
 (unless (package-installed-p 'exec-path-from-shell)
+  (package-refresh-contents)
   (package-install 'exec-path-from-shell))
 
 ; Loads PATH from the environment

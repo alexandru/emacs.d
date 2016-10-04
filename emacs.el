@@ -5,7 +5,6 @@
 (add-to-list 'package-archives
              '("melpa" . "https://melpa.org/packages/"))
 
-;(unless package-archive-contents (package-refresh-contents))
 (package-initialize)
 
 ;(exec-path-from-shell-initialize)
