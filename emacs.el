@@ -16,5 +16,8 @@
 (load-file "~/.emacs.d/settings/clojure-mode.el")
 (load-file "~/.emacs.d/settings/scala-mode.el")
 (load-file "~/.emacs.d/settings/fsharp-mode.el")
+(load-file "~/.emacs.d/settings/haskell.el")
 (load-file "~/.emacs.d/settings/ocaml.el")
+
+
 
