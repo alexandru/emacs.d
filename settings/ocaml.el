@@ -14,6 +14,7 @@
 (require 'tuareg)
 
 (add-hook 'tuareg-mode-hook 'merlin-mode)
-(add-hook 'tuareg-mode-hook 'ocp-indent)
+;(add-hook 'tuareg-mode-hook 'ocp-indent)
+
 
 
