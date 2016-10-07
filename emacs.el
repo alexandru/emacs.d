@@ -18,6 +18,7 @@
 (load-file "~/.emacs.d/settings/fsharp-mode.el")
 (load-file "~/.emacs.d/settings/haskell.el")
 (load-file "~/.emacs.d/settings/ocaml.el")
+(load-file "~/.emacs.d/settings/yaml-mode.el")
 
 
 
