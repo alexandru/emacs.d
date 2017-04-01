@@ -1,1 +1,0 @@
-models.DecimalField(max_digits=${1:8}, decimal_places=${2:2}, blank=True, null=True)$0
