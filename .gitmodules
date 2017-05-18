@@ -1,0 +1,3 @@
+[submodule "snippets-external"]
+	path = snippets-external
+	url = git@github.com:AndreaCrotti/yasnippet-snippets.git
