@@ -10,5 +10,3 @@
 
 (add-hook 'scala-mode-hook 'ensime-mode)
 (add-hook 'scala-mode-hook #'yas-minor-mode)
-
-

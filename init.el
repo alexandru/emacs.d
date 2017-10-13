@@ -13,14 +13,17 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(js-indent-level 2)
  '(package-selected-packages
    (quote
-    (emojify markdown-mode yaml-mode intero haskell-mode fsharp-mode ensime scala-mode cider clojure-mode better-defaults yasnippet paredit projectile exec-path-from-shell)))
+    (graphviz-dot-mode dot-mode js2-mode tide emojify markdown-mode yaml-mode intero haskell-mode fsharp-mode ensime scala-mode cider clojure-mode better-defaults yasnippet paredit projectile exec-path-from-shell)))
  '(show-paren-mode t)
- '(tool-bar-mode nil))
+ '(tool-bar-mode nil)
+ '(typescript-indent-level 2))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+(put 'downcase-region 'disabled nil)

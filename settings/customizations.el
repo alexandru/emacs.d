@@ -6,6 +6,8 @@
 (setq visible-bell nil) ;; The default
 (setq ring-bell-function 'ignore)
 
+(setq comment-multi-line t)
+
 ;; revert filling (Alt + Q)
 
 (defun unfill-paragraph ()

@@ -18,3 +18,7 @@
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 (menu-bar-mode 1)
+
+; IDO - for better buffer and file interactions
+(require 'ido)
+(ido-mode t)

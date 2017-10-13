@@ -21,6 +21,7 @@
 (load-file "~/.emacs.d/settings/ocaml.el")
 (load-file "~/.emacs.d/settings/yaml-mode.el")
 (load-file "~/.emacs.d/settings/markdown.el")
+(load-file "~/.emacs.d/settings/javascript.el")
 
 ;; Starting server
 (load "server")
