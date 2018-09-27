@@ -7,3 +7,7 @@
 
 (add-hook 'haskell-mode-hook 'haskell-indentation-mode)
 (add-hook 'haskell-mode-hook 'intero-mode)
+
+(add-hook 'haskell-mode-hook
+	  (lambda ()
+	    (local-set-key "\C-c\C-h" 'haskell-hoogle)))
