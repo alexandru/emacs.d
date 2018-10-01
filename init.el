@@ -5,9 +5,14 @@
 ;; You may delete these explanatory comments.
 (package-initialize)
 
+(when (not package-archive-contents)
+  (package-refresh-contents)
+  (package-install 'use-package))
+(require 'use-package)
+
 (load-file "~/.emacs.d/emacs.el")
 
-(set-frame-font "Fira Code 18")
+(set-frame-font "Fira Code 15")
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -16,7 +21,7 @@
  '(js-indent-level 2)
  '(package-selected-packages
    (quote
-    (graphviz-dot-mode dot-mode js2-mode tide emojify markdown-mode yaml-mode intero haskell-mode fsharp-mode ensime scala-mode cider clojure-mode better-defaults yasnippet paredit projectile exec-path-from-shell)))
+    (use-package sbt-mode graphviz-dot-mode dot-mode js2-mode tide emojify markdown-mode yaml-mode intero haskell-mode fsharp-mode ensime scala-mode cider clojure-mode better-defaults yasnippet paredit projectile exec-path-from-shell)))
  '(show-paren-mode t)
  '(tool-bar-mode nil)
  '(typescript-indent-level 2))

@@ -7,17 +7,23 @@
 
 ; Sets font size
 (set-face-attribute 'default nil :height 170)
-; Sets editor theme
-(load-theme 'deeper-blue t nil)
 
-; Maximizes the window
-(run-at-time "2 sec" nil
-             (lambda () (set-frame-parameter nil 'fullscreen 'maximized)))
+; GUI MODE: sets theme and other settings
+
+(defun window-load-theme ()
+  ;; Loads custom theme
+  (load-theme 'deeper-blue t nil)
+  ;; Maximizes the window on load
+  (run-at-time "2 sec" nil
+	       (lambda () (set-frame-parameter nil 'fullscreen 'maximized))))
+
+(if (display-graphic-p) (window-load-theme))
+(add-hook 'server-switch-buffer (window-load-theme))
 
 ; Graphical options
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
-(menu-bar-mode 1)
+(menu-bar-mode -1)
 
 ; IDO - for better buffer and file interactions
 (require 'ido)
