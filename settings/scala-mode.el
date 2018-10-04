@@ -6,7 +6,7 @@
 
 ;(setenv "PATH" (concat "/Users/alex/bin:" (getenv "PATH")))
 ;(setenv "PATH" (concat "/Users/alex/bin/scala-2.11.7/bin:" (getenv "PATH")))
-(when (memq window-system '(mac ns)) (exec-path-from-shell-initialize))
+(when (memq window-system '(mac ns)) )
 
 (add-hook 'scala-mode-hook #'yas-minor-mode)
 
