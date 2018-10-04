@@ -1,18 +1,33 @@
 
-;; Added by Package.el.  This must come before configurations of
-;; installed packages.  Don't delete this line.  If you don't want it,
-;; just comment it out by adding a semicolon to the start of the line.
-;; You may delete these explanatory comments.
-(package-initialize)
+;;;
+;;; Configuration for the package manager
+;;;
 
+(require 'package)
+(setq
+ package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+                    ("org" . "http://orgmode.org/elpa/")
+                    ("melpa" . "http://melpa.org/packages/")
+                    ("melpa-stable" . "http://stable.melpa.org/packages/"))
+ package-archive-priorities '(("melpa-stable" . 1)))
+
+(package-initialize)
 (when (not package-archive-contents)
   (package-refresh-contents)
   (package-install 'use-package))
 (require 'use-package)
 
+;;;
+;;; Loads everything
+;;;
+
+(add-to-list 'load-path "~/.emacs.d/elpa/")
 (load-file "~/.emacs.d/emacs.el")
 
-(set-frame-font "Fira Code 15")
+;;;
+;;; Emacs configuration written by emacs itself:
+;;;
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -21,7 +36,7 @@
  '(js-indent-level 2)
  '(package-selected-packages
    (quote
-    (use-package sbt-mode graphviz-dot-mode dot-mode js2-mode tide emojify markdown-mode yaml-mode intero haskell-mode fsharp-mode ensime scala-mode cider clojure-mode better-defaults yasnippet paredit projectile exec-path-from-shell)))
+    (magit color-theme use-package sbt-mode graphviz-dot-mode dot-mode js2-mode tide emojify markdown-mode yaml-mode intero haskell-mode fsharp-mode ensime scala-mode cider clojure-mode better-defaults yasnippet paredit projectile exec-path-from-shell)))
  '(show-paren-mode t)
  '(tool-bar-mode nil)
  '(typescript-indent-level 2))
