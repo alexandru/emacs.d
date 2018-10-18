@@ -17,7 +17,6 @@
   (scroll-bar-mode -1)
   (menu-bar-mode -1))
 
-
 (if (daemonp)
     (add-hook 'after-make-frame-functions
 	      (lambda (frame)

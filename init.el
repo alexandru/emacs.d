@@ -36,7 +36,7 @@
  '(js-indent-level 2)
  '(package-selected-packages
    (quote
-    (magit color-theme use-package sbt-mode graphviz-dot-mode dot-mode js2-mode tide emojify markdown-mode yaml-mode intero haskell-mode fsharp-mode ensime scala-mode cider clojure-mode better-defaults yasnippet paredit projectile exec-path-from-shell)))
+    (yasnippet-snippets etags-table magit color-theme use-package sbt-mode graphviz-dot-mode dot-mode js2-mode tide emojify markdown-mode yaml-mode intero haskell-mode fsharp-mode ensime scala-mode cider clojure-mode better-defaults yasnippet paredit projectile exec-path-from-shell)))
  '(show-paren-mode t)
  '(tool-bar-mode nil)
  '(typescript-indent-level 2))
