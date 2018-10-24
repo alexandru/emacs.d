@@ -1,8 +1,6 @@
 ;; GUI MODE: sets theme and other settings
 
 (defun load-graphical-settings ()
-  ;;; Font and size
-  (set-frame-font "Fira Code 15")
   ;;; Theme that works for both GUI and terminal:
   ;; (load-theme 'deeper-blue t nil)
   ;; (set-background-color "#000000")
@@ -11,7 +9,7 @@
   ;;; Makes the window transparent...
   ;; (set-frame-parameter (selected-frame) 'alpha '(85 . 50))
   ;;; Font, with ligatures and everything
-  (set-frame-font "Fira Code 16")
+  (set-frame-font "Fira Code 15")
   ;; Graphical options
   (tool-bar-mode -1)
   (scroll-bar-mode -1)

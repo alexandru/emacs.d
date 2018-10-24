@@ -90,3 +90,7 @@
 ;; use aspell for spell-checking instead of ispell
 
 (setq ispell-program-name "aspell")
+
+;; Enables auto-insertion of pair braces
+
+(electric-pair-mode 1)
