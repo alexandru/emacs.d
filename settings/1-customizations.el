@@ -8,6 +8,9 @@
 
 (setq comment-multi-line t)
 
+;; Some plugins break without it
+(setq default-tab-width 4)
+
 ;; revert filling (Alt + Q)
 
 (defun unfill-paragraph ()
