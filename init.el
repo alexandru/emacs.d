@@ -12,9 +12,8 @@
  package-archive-priorities '(("melpa-stable" . 1)))
 
 (package-initialize)
-(when (not package-archive-contents)
-  (package-refresh-contents)
-  (package-install 'use-package))
+(when (not package-archive-contents) (package-refresh-contents))
+(unless (package-installed-p 'use-package) (package-install 'use-package))
 (require 'use-package)
 
 ;;;
