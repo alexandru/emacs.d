@@ -1,5 +1,4 @@
-(defvar haskell-packages '(haskell-mode
-                           intero))
+(defvar haskell-packages '(haskell-mode intero))
 
 (dolist (p haskell-packages)
   (unless (package-installed-p p)
