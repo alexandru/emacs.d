@@ -6,7 +6,7 @@
     (package-install p)))
 
 (add-hook 'haskell-mode-hook 'haskell-indentation-mode)
-;(add-hook 'haskell-mode-hook 'intero-mode)
+(add-hook 'haskell-mode-hook 'intero-mode)
 
 (add-hook 'haskell-mode-hook
 	  (lambda ()
