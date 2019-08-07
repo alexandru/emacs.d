@@ -1,14 +1,14 @@
 ;; GUI MODE: sets theme and other settings
 
-(unless (package-installed-p 'color-theme)
-  (package-install 'color-theme))
+(unless (package-installed-p 'color-theme-modern)
+  (package-install 'color-theme-modern))
 
 (defun load-graphical-settings ()
   ;;; Theme that works for both GUI and terminal:
   ;; (load-theme 'deeper-blue t nil)
   ;; (set-background-color "#000000")
-  (color-theme-initialize)
-  (color-theme-clarity)
+  ;; (color-theme-initialize); deprecated
+  (load-theme 'clarity t)
   ;;; Makes the window transparent...
   ;; (set-frame-parameter (selected-frame) 'alpha '(85 . 50))
   ;;; Font, with ligatures and everything

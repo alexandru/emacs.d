@@ -35,6 +35,7 @@
 
 (set-register ?e '(file . "~/.emacs.d/settings"))
 (set-register ?s '(file . "~/.emacs.d/snippets"))
+(set-register ?d '(file . "~/Dropbox/Notes/"))
 
 ;; do not make backups
 
