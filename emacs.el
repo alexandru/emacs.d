@@ -16,14 +16,15 @@
 (load-file "~/.emacs.d/settings/1-customizations.el")
 (load-file "~/.emacs.d/settings/2-graphics.el")
 
-(load-file "~/.emacs.d/settings/ido.el")
 (load-file "~/.emacs.d/settings/clojure-mode.el")
 (load-file "~/.emacs.d/settings/emoji.el")
+(load-file "~/.emacs.d/settings/epa.el")
 (load-file "~/.emacs.d/settings/fira-code.el")
 (load-file "~/.emacs.d/settings/fsharp-mode.el")
 (load-file "~/.emacs.d/settings/git.el")
 (load-file "~/.emacs.d/settings/graphviz.el")
 (load-file "~/.emacs.d/settings/haskell.el")
+(load-file "~/.emacs.d/settings/ido.el")
 (load-file "~/.emacs.d/settings/javascript.el")
 (load-file "~/.emacs.d/settings/markdown.el")
 (load-file "~/.emacs.d/settings/ocaml.el")
@@ -34,6 +35,7 @@
 (load-file "~/.emacs.d/settings/yaml-mode.el")
 (load-file "~/.emacs.d/settings/yasnippets.el")
 
+;; should be last line?
 (load-file "~/.emacs.d/settings/keymap.el")
 
 ;; Starting server?

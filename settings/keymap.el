@@ -42,3 +42,8 @@
 
 ;;; Find file under cursor
 (global-set-key (kbd "s-.") 'ffap)
+
+;;; Inserts the em-dash
+(global-set-key (kbd "M-_") (lambda () (interactive) (insert "—")))
+
+
