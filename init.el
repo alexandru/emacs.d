@@ -20,6 +20,15 @@
 (unless (package-installed-p 'use-package) (package-install 'use-package))
 (require 'use-package)
 
+;; Keeps packages up-to-date
+
+(use-package auto-package-update
+  :ensure t
+  :config
+  (setq auto-package-update-delete-old-versions t)
+  (setq auto-package-update-hide-results t)
+  (auto-package-update-maybe))
+
 ;;;
 ;;; Loads everything
 ;;;
@@ -39,10 +48,11 @@
  '(custom-safe-themes
    (quote
     ("4c8372c68b3eab14516b6ab8233de2f9e0ecac01aaa859e547f902d27310c0c3" default)))
+ '(haskell-hoogle-url "https://www.stackage.org/lts/hoogle?q=%s")
  '(js-indent-level 2)
  '(package-selected-packages
    (quote
-    (intero yasnippet-snippets yasnippet yaml-mode sbt-mode scala-mode projectile paredit org-plus-contrib markdown-mode js2-mode tide typescript-mode graphviz-dot-mode magit fsharp-mode emojify cider clojure-mode better-defaults exec-path-from-shell use-package)))
+    (auto-package-update intero yasnippet-snippets yasnippet yaml-mode sbt-mode scala-mode projectile paredit org-plus-contrib markdown-mode js2-mode tide typescript-mode graphviz-dot-mode magit fsharp-mode emojify cider clojure-mode better-defaults exec-path-from-shell use-package)))
  '(show-paren-mode t)
  '(tool-bar-mode nil)
  '(typescript-indent-level 2))
