@@ -34,6 +34,7 @@
 (load-file "~/.emacs.d/settings/scala-mode.el")
 (load-file "~/.emacs.d/settings/yaml-mode.el")
 (load-file "~/.emacs.d/settings/yasnippets.el")
+(load-file "~/.emacs.d/settings/rainbow-delimiters.el")
 
 ;; should be last line?
 (load-file "~/.emacs.d/settings/keymap.el")
