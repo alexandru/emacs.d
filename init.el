@@ -33,9 +33,12 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(js-indent-level 2)
+ '(org-agenda-files
+   (quote
+    ("~/Dropbox/Notes/org/")))
  '(package-selected-packages
    (quote
-    (camcorder-record org-plus-contrib org-mode yasnippet-snippets etags-table magit color-theme use-package sbt-mode graphviz-dot-mode dot-mode js2-mode tide emojify markdown-mode yaml-mode haskell-mode fsharp-mode ensime scala-mode cider clojure-mode better-defaults yasnippet paredit projectile exec-path-from-shell)))
+    (intero camcorder-record org-plus-contrib org-mode yasnippet-snippets etags-table magit color-theme use-package sbt-mode graphviz-dot-mode dot-mode js2-mode tide emojify markdown-mode yaml-mode haskell-mode fsharp-mode ensime scala-mode cider clojure-mode better-defaults yasnippet paredit projectile exec-path-from-shell)))
  '(show-paren-mode t)
  '(tool-bar-mode nil)
  '(typescript-indent-level 2))
