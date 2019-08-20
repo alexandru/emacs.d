@@ -31,7 +31,7 @@
 
 ;; Make org-agenda-files take gpg files into account
 ;; https://emacs.stackexchange.com/questions/36542/include-org-gpg-files-in-org-agenda
-(setq org-agenda-file-regexp "\\`[^.].*\\.org\\.txt\\'")
+(setq org-agenda-file-regexp "\\`[^.].*\\.org\\(\\.txt\\|\\.gpg\\)?\\'")
 
 ;; Customizing path where Org files are
-(setq org-agenda-files '("~/Dropbox/Notes/"))
+(setq org-agenda-files '("~/Dropbox/Notes/org/"))
