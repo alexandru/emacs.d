@@ -50,6 +50,7 @@
     ("4c8372c68b3eab14516b6ab8233de2f9e0ecac01aaa859e547f902d27310c0c3" default)))
  '(haskell-hoogle-url "https://www.stackage.org/lts/hoogle?q=%s")
  '(js-indent-level 2)
+ '(org-agenda-files (quote ("~/Dropbox/Notes/org/")))
  '(package-selected-packages
    (quote
     (rainbow-delimiters auto-package-update intero yasnippet-snippets yasnippet yaml-mode sbt-mode scala-mode projectile paredit org-plus-contrib markdown-mode js2-mode tide typescript-mode graphviz-dot-mode magit fsharp-mode emojify cider clojure-mode better-defaults exec-path-from-shell use-package)))
