@@ -1,4 +1,4 @@
-(defvar org-packages '(org org-plus-contrib))
+defvar org
 
 (dolist (p org-packages)
   (unless (package-installed-p p)
@@ -19,6 +19,9 @@
 ;; GPG key to use for encryption
 ;; Either the Key ID or set to nil to use symmetric encryption.
 (setq org-crypt-key "74F892DD") ; alex@nedelcu.net
+
+;; Makes org files indexable and viewable by Dropbox
+(add-to-list 'auto-mode-alist '("\\.org.txt$" . org-mode))
 
 ;; Keyboard shortcuts
 (global-set-key (kbd "C-c a") 'org-agenda)

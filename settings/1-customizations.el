@@ -67,7 +67,8 @@
 
 (require 'recentf)
 (recentf-mode 1)
-(setq recentf-max-menu-items 25)
+(setq recentf-max-menu-items 100)
+(add-to-list 'recentf-exclude "\\.emacs.d\\'")
 (global-set-key "\C-x\ \C-r" 'recentf-open-files)
 
 ; interacts with the OS clipboard
