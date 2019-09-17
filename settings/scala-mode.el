@@ -14,16 +14,3 @@
    'minibuffer-complete-word
    'self-insert-command
    minibuffer-local-completion-map))
-
-(use-package lsp-mode
-  :ensure t
-  ;; Optional - enable lsp-mode automatically in scala files
-  :hook (scala-mode . lsp)
-  :config (setq lsp-prefer-flymake nil))
-
-(use-package lsp-ui
-  :ensure t)
-
-;; Add company-lsp backend for metals
-(use-package company-lsp
-  :ensure t)
