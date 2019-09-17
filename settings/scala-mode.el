@@ -1,16 +1,11 @@
-(defvar scala-packages '(scala-mode sbt-mode))
-
-(dolist (p scala-packages)
-  (unless (package-installed-p p)
-    (package-install p)))
-
-;(setenv "PATH" (concat "/Users/alex/bin:" (getenv "PATH")))
-;(setenv "PATH" (concat "/Users/alex/bin/scala-2.11.7/bin:" (getenv "PATH")))
-(when (memq window-system '(mac ns)) )
-
-(add-hook 'scala-mode-hook #'yas-minor-mode)
+(use-package scala-mode
+  :ensure t
+  :mode "\\.s\\(cala\\|bt\\)$"
+  :config
+  (add-hook 'scala-mode-hook #'yas-minor-mode))
 
 (use-package sbt-mode
+  :ensure t
   :commands sbt-start sbt-command
   :config
   ;; WORKAROUND: https://github.com/ensime/emacs-sbt-mode/issues/31
@@ -19,3 +14,16 @@
    'minibuffer-complete-word
    'self-insert-command
    minibuffer-local-completion-map))
+
+(use-package lsp-mode
+  :ensure t
+  ;; Optional - enable lsp-mode automatically in scala files
+  :hook (scala-mode . lsp)
+  :config (setq lsp-prefer-flymake nil))
+
+(use-package lsp-ui
+  :ensure t)
+
+;; Add company-lsp backend for metals
+(use-package company-lsp
+  :ensure t)
