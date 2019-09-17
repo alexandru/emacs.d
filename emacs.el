@@ -15,6 +15,7 @@
 (load-file "~/.emacs.d/settings/0-set-path.el")
 (load-file "~/.emacs.d/settings/1-customizations.el")
 (load-file "~/.emacs.d/settings/2-graphics.el")
+(load-file "~/.emacs.d/settings/3-basic.el")
 
 (load-file "~/.emacs.d/settings/flycheck.el")
 (load-file "~/.emacs.d/settings/clojure-mode.el")
