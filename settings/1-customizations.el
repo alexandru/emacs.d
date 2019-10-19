@@ -99,3 +99,18 @@
 ;; Enables auto-insertion of pair braces
 
 (electric-pair-mode 1)
+
+(defun today ()
+  (interactive)
+  (insert (format-time-string "%Y-%m-%d")))
+
+(defun now ()
+  (interactive)
+  (insert (format-time-string "%H:%M:%S")))
+
+(global-set-key "\C-c\ d" 'today)
+(global-set-key "\C-c\ t" 'now)
+
+
+
+

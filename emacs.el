@@ -18,7 +18,6 @@
 (load-file "~/.emacs.d/settings/3-basic.el")
 
 (load-file "~/.emacs.d/settings/flycheck.el")
-(load-file "~/.emacs.d/settings/clojure-mode.el")
 (load-file "~/.emacs.d/settings/emoji.el")
 (load-file "~/.emacs.d/settings/epa.el")
 (load-file "~/.emacs.d/settings/fira-code.el")
