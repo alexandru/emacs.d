@@ -11,6 +11,9 @@
 
 (require 'org)
 
+(with-eval-after-load 'org
+  (add-to-list 'org-modules 'org-habit t))
+
 ;; For encrypting items in org-mode
 ;; https://orgmode.org/worg/org-tutorials/encrypting-files.html
 (require 'org-crypt)
