@@ -28,7 +28,7 @@
 (load-file "~/.emacs.d/settings/ido.el")
 (load-file "~/.emacs.d/settings/javascript.el")
 (load-file "~/.emacs.d/settings/markdown.el")
-(load-file "~/.emacs.d/settings/ocaml.el")
+;;(load-file "~/.emacs.d/settings/ocaml.el")
 (load-file "~/.emacs.d/settings/org.el")
 (load-file "~/.emacs.d/settings/paredit.el")
 (load-file "~/.emacs.d/settings/projectile.el")
