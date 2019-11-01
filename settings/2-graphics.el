@@ -16,8 +16,9 @@
   ;; Graphical options
   (tool-bar-mode -1)
   (scroll-bar-mode -1)
-  (menu-bar-mode 1)
-  )
+  (menu-bar-mode -1)
+  ;; open files in an existing frame instead of a new frame
+  (setq ns-pop-up-frames nil))
 
 (if (daemonp)
     (add-hook 'after-make-frame-functions
@@ -26,5 +27,3 @@
 		(load-graphical-settings)))
   ;; else
   (load-graphical-settings))
-
-
