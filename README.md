@@ -15,3 +15,4 @@ Create a file in your `$HOME/.emacs` like so:
 ```bash
 echo '(load-file "~/.emacs.d/emacs.el")' > ~/.emacs
 ```
+
