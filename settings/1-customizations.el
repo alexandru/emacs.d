@@ -111,6 +111,14 @@
 (global-set-key "\C-c\ d" 'today)
 (global-set-key "\C-c\ t" 'now)
 
+;; Kill all buffers except for the current one
 
+(defun kill-other-buffers ()
+  "Kill all other buffers."
+  (interactive)
+  (mapc 'kill-buffer (delq (current-buffer) (buffer-list))))
 
-
+(defun kill-all-buffers ()
+  "Kill all buffers."
+  (interactive)
+  (mapc 'kill-buffer (buffer-list)))
