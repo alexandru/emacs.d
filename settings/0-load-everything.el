@@ -1,21 +1,9 @@
-;;;
-;;; Utilities used in other configuration files
-;;;
+(add-to-list 'load-path "~/.emacs.d/elpa/")
 
-(defun package-require (&rest packages)
-  "Installs the following packages, if not installed already"
-  (dolist (p packages)
-    (unless (package-installed-p p)
-      (package-install p))))
-
-;;;
-;;; Lists all configuration files
-;;;
-
-(load-file "~/.emacs.d/settings/0-set-path.el")
-(load-file "~/.emacs.d/settings/1-customizations.el")
-(load-file "~/.emacs.d/settings/2-graphics.el")
-(load-file "~/.emacs.d/settings/3-basic.el")
+(load-file "~/.emacs.d/settings/1-init-package-manager.el")
+(load-file "~/.emacs.d/settings/2-init.el")
+(load-file "~/.emacs.d/settings/3-functions.el")
+(load-file "~/.emacs.d/settings/4-global-keymap.el")
 
 (load-file "~/.emacs.d/settings/flycheck.el")
 (load-file "~/.emacs.d/settings/emoji.el")
@@ -36,11 +24,3 @@
 (load-file "~/.emacs.d/settings/yasnippets.el")
 (load-file "~/.emacs.d/settings/rainbow-delimiters.el")
 (load-file "~/.emacs.d/settings/rust.el")
-
-;; should be last line?
-(load-file "~/.emacs.d/settings/keymap.el")
-
-;; Starting server?
-;; (load "server")
-;; (unless (server-running-p) (server-start))
-
