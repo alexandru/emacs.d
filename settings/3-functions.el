@@ -75,3 +75,10 @@
       (set-window-buffer (next-window) next-win-buffer)
       (select-window first-win)
       (if this-win-2nd (other-window 1))))))
+
+(defun find-oriel-meeting ()
+  (interactive)
+  (let ((daily-name (format-time-string "%Y-%m-%d")))
+    (find-file (expand-file-name (concat "~/Notes/Docs/Oriel/Meeting " daily-name ".md")))
+    (if (= (buffer-size) 0)
+        (insert (concat "# Meeting " daily-name)))))
