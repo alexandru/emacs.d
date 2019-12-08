@@ -9,7 +9,6 @@
 (load-file "~/.emacs.d/settings/emoji.el")
 (load-file "~/.emacs.d/settings/epa.el")
 (load-file "~/.emacs.d/settings/fira-code.el")
-(load-file "~/.emacs.d/settings/fsharp-mode.el")
 (load-file "~/.emacs.d/settings/git.el")
 (load-file "~/.emacs.d/settings/graphviz.el")
 (load-file "~/.emacs.d/settings/haskell.el")

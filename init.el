@@ -13,6 +13,7 @@
    (quote
     ("4c8372c68b3eab14516b6ab8233de2f9e0ecac01aaa859e547f902d27310c0c3" default)))
  '(haskell-hoogle-url "https://www.stackage.org/lts/hoogle?q=%s")
+ '(intero-stack-executable "/usr/local/bin/stack")
  '(js-indent-level 2)
  '(markdown-toc-user-toc-structure-manipulation-fn
    (lambda
