@@ -23,3 +23,4 @@
 (load-file "~/.emacs.d/settings/yasnippets.el")
 (load-file "~/.emacs.d/settings/rainbow-delimiters.el")
 (load-file "~/.emacs.d/settings/rust.el")
+(load-file "~/.emacs.d/settings/lsp-mode.el")

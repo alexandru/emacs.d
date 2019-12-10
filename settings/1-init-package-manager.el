@@ -10,9 +10,10 @@
         ("MELPA Stable" . "https://stable.melpa.org/packages/")
         ("MELPA"        . "https://melpa.org/packages/"))
       package-archive-priorities
-      '(("GNU ELPA"     . 10)
+      '(
+        ("MELPA Stable" . 20)
+        ("GNU ELPA"     . 10)
         ("ORG Mode"     . 9)
-        ("MELPA Stable" . 5)
         ("MELPA"        . 0)))
 (package-initialize)
 
