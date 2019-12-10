@@ -5,8 +5,8 @@
 (use-package exec-path-from-shell
   :ensure t
   :config
-  (when (memq window-system '(mac ns x))
-    (exec-path-from-shell-initialize)))
+  (when (or (daemonp) (memq window-system '(mac ns x)))
+      (exec-path-from-shell-initialize)))
 
 ;; --------------------------------------------------------------
 ;; A small number of better defaults for Emacs
