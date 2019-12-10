@@ -1,9 +1,3 @@
-(defvar ts-packages '(typescript-mode tide js2-mode company))
-
-(dolist (p ts-packages)
-  (unless (package-installed-p p)
-    (package-install p)))
-
 (defun setup-tide-mode ()
   (interactive)
   (tide-setup)
@@ -17,7 +11,16 @@
   ;; `M-x package-install [ret] company`
   (company-mode +1))
 
-;; aligns annotation to the right hand side
-(setq company-tooltip-align-annotations t)
+(use-package js2-mode
+  :ensure t)
 
-(add-hook 'typescript-mode-hook #'setup-tide-mode)
+(use-package typescript-mode
+  :ensure t
+  :after js2-mode)
+
+(use-package tide
+  :ensure t
+  :after typescript-mode company
+  :config
+  (add-hook 'typescript-mode-hook #'setup-tide-mode))
+

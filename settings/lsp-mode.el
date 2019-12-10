@@ -11,5 +11,11 @@
 (use-package lsp-ui
   :ensure t
   :config
-  (add-hook 'lsp-mode-hook 'lsp-ui-mode)
-  (add-hook 'rust-mode-hook 'flycheck-mode))
+  (add-hook 'lsp-mode-hook 'lsp-ui-mode))
+
+(use-package company-lsp
+  :ensure t
+  :after company lsp-mode
+  :config
+  (push 'company-lsp company-backends))
+
