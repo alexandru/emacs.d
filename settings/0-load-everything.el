@@ -16,6 +16,7 @@
 (load-file "~/.emacs.d/settings/ido.el")
 (load-file "~/.emacs.d/settings/javascript.el")
 (load-file "~/.emacs.d/settings/lsp-mode.el")
+(load-file "~/.emacs.d/settings/mmm.el")
 (load-file "~/.emacs.d/settings/markdown.el")
 (load-file "~/.emacs.d/settings/org.el")
 (load-file "~/.emacs.d/settings/paredit.el")

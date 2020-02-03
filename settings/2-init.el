@@ -93,3 +93,10 @@
 ;; Enables auto-insertion of pair braces
 ;; https://www.emacswiki.org/emacs/ElectricPair
 (electric-pair-mode 1)
+
+;; Refreshes buffers automatically when the file changes on disk
+;; https://www.emacswiki.org/emacs/RevertBuffer
+(global-auto-revert-mode 1)
+
+;; Auto refresh dired when file changes
+(add-hook 'dired-mode-hook 'auto-revert-mode)

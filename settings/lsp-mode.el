@@ -4,9 +4,7 @@
 (use-package lsp-mode
   :ensure t
   :hook (rust-mode . lsp)
-  :commands lsp
-  :config
-  (add-hook 'rust-mode-hook #'lsp-deferred))
+  :commands lsp)
 
 (use-package lsp-ui
   :ensure t

@@ -16,7 +16,9 @@
 
 (use-package typescript-mode
   :ensure t
-  :after js2-mode)
+  :after js2-mode lsp-mode
+  :config
+  (add-hook 'typescript-mode-hook #'lsp-deferred))
 
 (use-package tide
   :ensure t
