@@ -2,7 +2,8 @@
   :ensure t
   :mode "\\.s\\(cala\\|bt\\)$"
   :config
-  (add-hook 'scala-mode-hook #'yas-minor-mode))
+  (add-hook 'scala-mode-hook #'yas-minor-mode)
+  (local-set-key (kbd "C-x '") 'sbt-run-previous-command))
 
 (use-package sbt-mode
   :ensure t
@@ -13,4 +14,9 @@
   (substitute-key-definition
    'minibuffer-complete-word
    'self-insert-command
-   minibuffer-local-completion-map))
+   minibuffer-local-completion-map)
+   ;; sbt-supershell kills sbt-mode:  https://github.com/hvesalai/emacs-sbt-mode/issues/152
+   (setq sbt:program-options '("-Dsbt.supershell=false")))
+
+;; NOTE: for metals to work, the binary has to be in PATH
+;; https://scalameta.org/metals/docs/editors/emacs.html

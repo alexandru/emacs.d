@@ -3,7 +3,9 @@
 
 (use-package lsp-mode
   :ensure t
-  :hook (rust-mode . lsp)
+  :hook ((rust-mode . lsp)
+         (scala-mode . lsp))
+  :config (setq lsp-prefer-flymake nil)
   :commands lsp)
 
 (use-package lsp-ui
@@ -16,4 +18,3 @@
   :after company lsp-mode
   :config
   (push 'company-lsp company-backends))
-
