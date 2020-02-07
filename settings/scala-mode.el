@@ -3,6 +3,7 @@
   :mode "\\.s\\(cala\\|bt\\)$"
   :config
   (add-hook 'scala-mode-hook #'yas-minor-mode)
+  (add-hook 'scala-mode-hook #'flycheck-mode)
   (local-set-key (kbd "C-x '") 'sbt-run-previous-command))
 
 (use-package sbt-mode

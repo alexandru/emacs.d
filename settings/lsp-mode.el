@@ -1,20 +1,29 @@
 ;; LSP (Language Server Extension)
 ;; https://code.visualstudio.com/api/language-extensions/language-server-extension-guide
 
-(use-package lsp-mode
-  :ensure t
-  :hook ((rust-mode . lsp)
-         (scala-mode . lsp))
-  :config (setq lsp-prefer-flymake nil)
-  :commands lsp)
+;; (use-package lsp-mode
+;;   :ensure t
+;;   :pin melpa
+;;   :after which-key
+;;   :init (setq lsp-keymap-prefix "S-l")
+;;   :hook (
+;;          (rust-mode . lsp-deferred)
+;;          (scala-mode . lsp-deferred)
+;;          (lsp-mode . lsp-enable-which-key-integration))
+;;   :config
+;;   (setq lsp-prefer-flymake nil)
+;;   :commands lsp)
 
-(use-package lsp-ui
-  :ensure t
-  :config
-  (add-hook 'lsp-mode-hook 'lsp-ui-mode))
+;; (use-package lsp-ui
+;;   :ensure t
+;;   :pin melpa
+;;   :commands lsp-ui-mode
+;;   :init
+;;   ;; (setq lsp-ui-doc-use-webkit t)
+;;   )
 
-(use-package company-lsp
-  :ensure t
-  :after company lsp-mode
-  :config
-  (push 'company-lsp company-backends))
+;; ;; Add company-lsp backend for metals
+;; (use-package company-lsp
+;;   :ensure t
+;;   :pin melpa
+;;   :commands company-lsp)

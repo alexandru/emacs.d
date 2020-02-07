@@ -5,16 +5,16 @@
 
 (require 'package)
 (setq package-archives
-      '(("GNU ELPA"     . "https://elpa.gnu.org/packages/")
-        ("ORG Mode"     . "https://orgmode.org/elpa/")
-        ("MELPA Stable" . "https://stable.melpa.org/packages/")
-        ("MELPA"        . "https://melpa.org/packages/"))
+      '(("gnu-elpa"     . "https://elpa.gnu.org/packages/")
+        ("org-mode"     . "https://orgmode.org/elpa/")
+        ("melpa-stable" . "https://stable.melpa.org/packages/")
+        ("melpa"        . "https://melpa.org/packages/"))
       package-archive-priorities
       '(
-        ("MELPA Stable" . 20)
-        ("GNU ELPA"     . 10)
-        ("ORG Mode"     . 9)
-        ("MELPA"        . 0)))
+        ("melpa-stable" . 20)
+        ("gnu-elpa"     . 10)
+        ("org-mode"     . 9)
+        ("melpa"        . 0)))
 (package-initialize)
 
 (when (not package-archive-contents) (package-refresh-contents))

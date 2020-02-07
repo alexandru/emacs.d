@@ -1,7 +1,12 @@
+;; Unset interesting keys combinations that were automatically
+;; set for Mac OS
+(global-unset-key (kbd "s-l"))
+(global-unset-key (kbd "s-p"))
+
 ;; easy access to the customizations file
 (set-register ?e '(file . "~/.emacs.d/settings"))
 (set-register ?s '(file . "~/.emacs.d/snippets"))
-(set-register ?d '(file . "~/Dropbox/Notes/"))
+(set-register ?n '(file . "~/Dropbox/Notes/"))
 
 ;; Opposite of \M-q (fill-paragraph)
 (global-set-key "\M-Q" 'unfill-paragraph)

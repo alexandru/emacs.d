@@ -30,5 +30,28 @@
   (add-hook 'org-mode-hook (lambda () (local-set-key (kbd "C-c d") 'org-decrypt-entries)))
   ;; Make org-agenda-files take gpg files into account
   ;; https://emacs.stackexchange.com/questions/36542/include-org-gpg-files-in-org-agenda
-  (setq org-agenda-file-regexp "\\`[^.].*\\.org\\(\\.txt\\|\\.gpg\\)?\\'")  
+  (setq org-agenda-file-regexp "\\`[^.].*\\.org\\(\\.txt\\|\\.gpg\\)?\\'")
+
+  ;; Resume clocking task when emacs is restarted
+  (org-clock-persistence-insinuate)
+  ;; Save the running clock and all clock history when exiting Emacs, load it on startup
+  (setq org-clock-persist t)
+  ;; Resume clocking task on clock-in if the clock is open
+  (setq org-clock-in-resume t)
+  ;; Do not prompt to resume an active clock, just resume it
+  (setq org-clock-persist-query-resume nil)
+
+  ;; Save clock data and state changes and notes in the LOGBOOK drawer
+  (setq org-clock-into-drawer t)
+  ;; Sometimes I change tasks I'm clocking quickly - this removes clocked tasks
+  ;; with 0:00 duration
+  (setq org-clock-out-remove-zero-time-clocks t)
+  ;; Clock out when moving task to a done state
+  (setq org-clock-out-when-done t)
+  ;; Enable auto clock resolution for finding open clocks
+  (setq org-clock-auto-clock-resolution (quote when-no-clock-is-running))
+  ;; Include current clocking task in clock reports
+  (setq org-clock-report-include-clocking-task t)
+  ;; use pretty things for the clocktable
+  (setq org-pretty-entities t)
   )

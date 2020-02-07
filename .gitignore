@@ -13,3 +13,4 @@ ensime/
 backups/
 projectile*
 bookmarks
+org-clock-save.el

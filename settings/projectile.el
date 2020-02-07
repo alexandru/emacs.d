@@ -1,17 +1,15 @@
 (use-package projectile
   :ensure t
   :config
-  
-  (projectile-global-mode)
+  (projectile-mode +1)
+  (define-key projectile-mode-map (kbd "S-p") 'projectile-find-dir)
+  (define-key projectile-mode-map (kbd "M-p") 'projectile-command-map)
+)
 
-  (define-key projectile-mode-map [?\s-d] 'projectile-find-dir)
-  (define-key projectile-mode-map (kbd "M-p d") 'projectile-find-dir)
+(use-package neotree
+  :ensure t
+  :config
+  (global-set-key [f7] 'neotree-toggle)
+  (global-set-key (kbd "s-b") 'neotree-toggle))
 
-  (define-key projectile-mode-map [?\s-p] 'projectile-switch-project)
-  (define-key projectile-mode-map (kbd "M-p p") 'projectile-switch-project)
 
-  (define-key projectile-mode-map [?\s-f] 'projectile-find-file)
-  (define-key projectile-mode-map (kbd "M-p f") 'projectile-find-file)
-
-  (define-key projectile-mode-map [?\s-g] 'projectile-grep)
-  (define-key projectile-mode-map (kbd "M-p g") 'projectile-grep))
