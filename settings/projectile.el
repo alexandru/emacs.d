@@ -2,7 +2,7 @@
   :ensure t
   :config
   (projectile-mode +1)
-  (define-key projectile-mode-map (kbd "S-p") 'projectile-find-dir)
+  (define-key projectile-mode-map (kbd "s-p") 'projectile-find-file)
   (define-key projectile-mode-map (kbd "M-p") 'projectile-command-map)
 )
 
