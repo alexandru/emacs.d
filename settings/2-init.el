@@ -40,7 +40,18 @@
   (setq inhibit-startup-echo-area-message t)
   (setq initial-scratch-message nil)   
   ;; open files in an existing frame instead of a new frame
-  (setq ns-pop-up-frames nil))
+  (setq ns-pop-up-frames nil)
+  ;; iTerm2 mouse support
+  ;; https://www.emacswiki.org/emacs/iTerm2#toc6
+  (unless window-system
+    (require 'mouse)
+    (xterm-mouse-mode t)
+    (global-set-key [mouse-4] (lambda () (interactive) (scroll-down 1)))
+    (global-set-key [mouse-5] (lambda () (interactive) (scroll-up 1)))
+    (defun track-mouse (e)) 
+    (setq mouse-sel-mode t)
+    )
+  )
 
 (use-package color-theme-modern
   :ensure t
