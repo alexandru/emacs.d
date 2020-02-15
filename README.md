@@ -115,3 +115,17 @@ alias e="/Users/alex/bin/run-emacsclient-cli"
 alias ew="/Users/alex/bin/run-emacsclient"
 alias notes='/Users/alex/bin/run-emacsclient -e "(if (display-graphic-p) (x-focus-frame nil))" -e "(deft)" | grep -v nil'
 ```
+
+### MacOS Apps
+
+For executing the `emacsclient` in GUI mode as a regular app (via
+Spotlight search, from the Dock, etc), packaged apps are provided in
+[./apps/MacOS Apps.tar.gz](./apps/MacOS Apps.tar.gz).
+
+These are created and can be edited with the 
+[MacOS Automator](https://support.apple.com/guide/automator/welcome/mac)
+and can be edited by it.
+
+They do nothing more than to execute `/Users/alex/bin/run-emacsclient`
+(script described above) with certain parameters. The path to the
+script can be edited via Automator.
