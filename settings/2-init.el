@@ -50,8 +50,8 @@
     (global-set-key [mouse-5] (lambda () (interactive) (scroll-up 1)))
     (defun track-mouse (e)) 
     (setq mouse-sel-mode t)
-    )
-  )
+    ;; Interacts with OS clipboard
+    (use-package xclip :ensure t :config (xclip-mode 1))))
 
 (use-package color-theme-modern
   :ensure t
