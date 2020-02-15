@@ -111,3 +111,6 @@
 
 ;; Auto refresh dired when file changes
 (add-hook 'dired-mode-hook 'auto-revert-mode)
+
+;; Always follow symlinks
+(setq vc-follow-symlinks t)
