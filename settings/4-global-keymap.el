@@ -28,7 +28,7 @@
 (global-set-key "\C-c\ t" 'now)
 
 ;; Shortcut for maximizing the window
-(global-set-key (kbd "s-+") (lambda () (interactive) (set-frame-parameter nil 'fullscreen 'maximized)))
+(global-set-key (kbd "C-s-=") (lambda () (interactive) (set-frame-parameter nil 'fullscreen 'maximized)))
 
 ;;; Switches between horizontal and vertical split
 (global-set-key (kbd "C-x |") 'toggle-window-split)  
