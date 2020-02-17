@@ -82,3 +82,25 @@
     (find-file (expand-file-name (concat "~/Notes/Docs/Oriel/Meeting " daily-name ".md")))
     (if (= (buffer-size) 0)
         (insert (concat "# Meeting " daily-name)))))
+
+(defun markdown-toc-generate ()
+  (interactive)
+  (save-buffer)
+  (if (not (eq (shell-command "which markdown-toc") 0))
+      (shell-command "npm install -g markdown-toc"))
+  (let ((command (concat "markdown-toc -i '" (buffer-file-name) "'")))
+    (shell-command command))
+  (revert-buffer :ignore-auto :noconfirm))
+
+(defun find-buffer-by-prefix (prefix)
+  (interactive (list (read-from-minibuffer "Buffer prefix: ")))
+  (let ((buffer
+       (seq-find (lambda (b) (string-prefix-p prefix (buffer-name b) 1)) (buffer-list))))
+  (if buffer
+      (switch-to-buffer buffer)
+    (error (concat "Cannot switch to buffer: " prefix)))))
+
+(defun code-open ()
+  (interactive)
+  (save-buffer)
+  (shell-command (concat "code " (buffer-file-name))))

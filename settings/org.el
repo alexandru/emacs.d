@@ -55,3 +55,14 @@
   ;; use pretty things for the clocktable
   (setq org-pretty-entities t)
   )
+
+
+(use-package toc-org
+  :ensure t
+  :config
+  (add-hook 'org-mode-hook 'toc-org-mode)
+  (add-hook 'markdown-mode-hook 'toc-org-mode)
+)
+
+;;; org.el ends here
+
