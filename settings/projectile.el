@@ -6,10 +6,12 @@
   (define-key projectile-mode-map (kbd "M-p") 'projectile-command-map)
 )
 
-(use-package neotree
+(use-package treemacs
+  :ensure t)
+
+(use-package treemacs-projectile
+  :requires treemacs
   :ensure t
   :config
-  (global-set-key [f7] 'neotree-toggle)
-  (global-set-key (kbd "s-b") 'neotree-toggle))
-
-
+  (global-set-key [f7] 'treemacs)
+  (global-set-key (kbd "s-b") 'treemacs))
