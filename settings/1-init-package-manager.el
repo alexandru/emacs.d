@@ -43,3 +43,11 @@
   (setq auto-package-update-hide-results t)
   (setq auto-package-update-interval 14) ;; days
   (auto-package-update-maybe))
+
+(use-package auto-compile
+  :ensure t
+  :init
+  (setq load-prefer-newer t)
+  :config
+  (auto-compile-on-load-mode)
+  (auto-compile-on-save-mode))

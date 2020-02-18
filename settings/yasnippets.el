@@ -1,10 +1,8 @@
-(defvar yasnippet-packages '(yasnippet yasnippet-snippets))
+(use-package yasnippet
+  :ensure t
+  :config
+  (yas-global-mode 1))
 
-(dolist (p yasnippet-packages)
-  (unless (package-installed-p p)
-    (package-install p)))
-
-(require 'yasnippet)
-(require 'yasnippet-snippets)
-(yas-global-mode 1)
-
+(use-package yasnippet-snippets
+  :ensure t
+  :after yasnippet)
