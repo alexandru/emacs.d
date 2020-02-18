@@ -6,7 +6,6 @@
 (load-file "~/.emacs.d/settings/4-global-keymap.el")
 
 (load-file "~/.emacs.d/settings/company.el")
-(load-file "~/.emacs.d/settings/emoji.el")
 (load-file "~/.emacs.d/settings/epa.el")
 (load-file "~/.emacs.d/settings/fira-code.el")
 (load-file "~/.emacs.d/settings/flycheck.el")

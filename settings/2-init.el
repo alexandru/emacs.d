@@ -114,3 +114,9 @@
 
 ;; Always follow symlinks
 (setq vc-follow-symlinks t)
+
+;; Auto-save triggered after being idle for 10 seconds
+(setq auto-save-visited-interval 10)
+;; Auto-save after some idle time
+(auto-save-visited-mode 1)
+

@@ -26,9 +26,10 @@
 ;;
 
 (unless (package-installed-p 'use-package)
-  (package-refresh-contents)
   (package-install 'use-package))
-(require 'use-package)
+
+(eval-when-compile
+  (require 'use-package))
 
 ;; --------------------------------------------------------------
 ;;
@@ -40,4 +41,5 @@
   :config
   (setq auto-package-update-delete-old-versions t)
   (setq auto-package-update-hide-results t)
+  (setq auto-package-update-interval 14) ;; days
   (auto-package-update-maybe))
