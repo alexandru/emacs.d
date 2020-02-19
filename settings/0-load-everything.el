@@ -19,6 +19,7 @@
 (load-file "~/.emacs.d/settings/mmm.el")
 (load-file "~/.emacs.d/settings/org.el")
 (load-file "~/.emacs.d/settings/paredit.el")
+(load-file "~/.emacs.d/settings/powerline.el")
 (load-file "~/.emacs.d/settings/projectile.el")
 (load-file "~/.emacs.d/settings/rainbow-delimiters.el")
 (load-file "~/.emacs.d/settings/rust.el")

@@ -25,9 +25,7 @@
   ;; (color-theme-initialize); deprecated
   (load-theme 'clarity t)
   ;;; Makes the window transparent...
-  ;; (set-frame-parameter (selected-frame) 'alpha '(85 . 50))
-  ;;; Font, with ligatures and everything
-  (set-frame-font "Fira Code 16")
+  ;; (set-frame-parameter (selected-frame) 'alpha '(95 . 50))
   ;; --------------------------------------------------------
   ;; Graphical options
   (tool-bar-mode -1)
@@ -99,7 +97,7 @@
 (setq-default truncate-lines t)
 
 ; Interacts with the OS clipboard
-(setq x-select-enable-clipboard t)
+(setq select-enable-clipboard t)
 
 ;; Enables auto-insertion of pair braces
 ;; https://www.emacswiki.org/emacs/ElectricPair

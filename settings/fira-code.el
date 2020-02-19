@@ -1,8 +1,10 @@
 ;; NOTE: https://github.com/tonsky/FiraCode/wiki/Setting-up-Emacs
 
-(when (window-system)
-  (set-default-font "Fira Code"))
+;;; Font, with ligatures and everything
+(set-frame-font "Fira Code 16")
+(when (window-system) (set-default-font "Fira Code"))
 
+;; Fixes for ligatures
 (let ((alist '((33 . ".\\(?:\\(?:==\\|!!\\)\\|[!=]\\)")
                (35 . ".\\(?:###\\|##\\|_(\\|[#(?[_{]\\)")
                (36 . ".\\(?:>\\)")
