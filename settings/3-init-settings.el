@@ -1,3 +1,5 @@
+(require '1-functions)
+
 ;; --------------------------------------------------------------
 ;; Make Emacs use the $PATH set up by the user's shell
 ;; https://github.com/purcell/exec-path-from-shell
@@ -54,14 +56,7 @@
 (use-package color-theme-modern
   :ensure t
   :config
-  
-  (if (daemonp)
-      (add-hook 'after-make-frame-functions
-                (lambda (frame)
-                  (select-frame frame)
-                  (load-graphical-settings)))
-    ;; else
-    (load-graphical-settings)))
+  (my/on-frame-execute 'load-graphical-settings))
 
 ;; --------------------------------------------------------------
 ;; Enable Recent Files
@@ -117,4 +112,3 @@
 (setq auto-save-visited-interval 10)
 ;; Auto-save after some idle time
 (auto-save-visited-mode 1)
-

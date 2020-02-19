@@ -1,8 +1,8 @@
 (add-to-list 'load-path "~/.emacs.d/elpa/")
 
-(load-file "~/.emacs.d/settings/1-init-package-manager.el")
-(load-file "~/.emacs.d/settings/2-init.el")
-(load-file "~/.emacs.d/settings/3-functions.el")
+(load-file "~/.emacs.d/settings/1-functions.el")
+(load-file "~/.emacs.d/settings/2-init-package-manager.el")
+(load-file "~/.emacs.d/settings/3-init-settings.el")
 (load-file "~/.emacs.d/settings/4-global-keymap.el")
 
 (load-file "~/.emacs.d/settings/company.el")

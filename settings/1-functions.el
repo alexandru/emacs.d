@@ -1,11 +1,20 @@
+;;; 1-functions.el --- my utils -*- lexical-binding: t; -*-
+
+;;; Commentary:
+;;
+;; Whatever functions definitions I need go here.
+;;
+
+;;; Code:
+
 (defun package-require (&rest packages)
-  "Installs the following packages, if not installed already"
+  "Install the following packages, if not installed already."
   (dolist (p packages)
     (unless (package-installed-p p)
       (package-install p))))
 
 (defun unfill-paragraph ()
-  "The opposite of fill paragraph (M-q)"
+  "The opposite of fill paragraph (M-q)."
   (interactive)
   (let ((fill-column (point-max)))
     (fill-paragraph nil)))
@@ -50,8 +59,8 @@
   "For toggling between horizontal split and vertical split.
 
   Source:
-  `https://stackoverflow.com/questions/14881020/emacs-shortcut-to-switch-from-a-horizontal-split-to-a-vertical-split-in-one-move'
-  "
+  `https://stackoverflow.com/questions/14881020/emacs-shortcut-to-switch-from-a-horizontal-split-to-a-vertical-split-in-one-move'"
+  
   (interactive)
   (if (= (count-windows) 2)
       (let* ((this-win-buffer (window-buffer))
@@ -104,3 +113,13 @@
   (interactive)
   (save-buffer)
   (shell-command (concat "code " (buffer-file-name))))
+
+(defun my/on-frame-execute (fn)
+  (if (daemonp)
+      (add-hook 'after-make-frame-functions
+                (lambda (frame) (select-frame frame) (funcall fn)))
+    ;; else
+    (funcall fn)))
+
+(provide '1-functions)
+;;; 1-functions.el ends here
