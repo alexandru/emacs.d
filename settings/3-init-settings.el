@@ -23,9 +23,13 @@
 (defun load-graphical-settings ()
   ;;; Theme that works for both GUI and terminal:
   ;; (load-theme 'deeper-blue t nil)
-  ;; (set-background-color "#000000")
   ;; (color-theme-initialize); deprecated
-  (load-theme 'clarity t)
+  (load-theme 'dracula t)
+  (unless (not window-system)
+    (set-background-color "#1a1c23")
+    (set-frame-parameter (selected-frame) 'alpha '(100 . 100))
+    (add-to-list 'default-frame-alist '(alpha . (100 . 100))))
+  ;(load-theme 'dracula t)
   ;;; Makes the window transparent...
   ;; (set-frame-parameter (selected-frame) 'alpha '(95 . 50))
   ;; --------------------------------------------------------
@@ -51,9 +55,10 @@
     (defun track-mouse (e)) 
     (setq mouse-sel-mode t)
     ;; Interacts with OS clipboard
-    (use-package xclip :ensure t :config (xclip-mode 1))))
+    (use-package xclip :ensure t :config (xclip-mode 1)))
+  )
 
-(use-package color-theme-modern
+(use-package dracula-theme
   :ensure t
   :config
   (my/on-frame-execute 'load-graphical-settings))

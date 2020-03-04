@@ -9,8 +9,9 @@
   (setq markdown-fontify-code-blocks-natively t)
 
   ;; https://gist.github.com/fredRos/0e3a845de95ec654538f
-  (setq markdown-command "pandoc -c file:///Users/alex/.emacs.d/media/gfm.css --from markdown+markdown_in_html_blocks -t html5 --mathjax --highlight-style pygments --standalone")
-  
+  (setq markdown-command
+        "pandoc -c file:///Users/alex/.emacs.d/media/gfm.css --from markdown+markdown_in_html_blocks -t html5 --mathjax --highlight-style pygments --standalone --shift-heading-level-by=-1")
+
   (add-to-list 'auto-mode-alist
                '("\\.md.erb\\'" . markdown-mode))
 
