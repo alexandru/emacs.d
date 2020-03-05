@@ -1,3 +1,13 @@
+;;; 3-init-settings.el --- -*- lexical-binding: t; -*-
+
+;;; Commentary:
+;;
+;; Everything related to graphics and other UI and misc settings go
+;; here.
+;;
+
+;;; Code:
+
 (require '1-functions)
 
 ;; --------------------------------------------------------------
@@ -117,3 +127,6 @@
 (setq auto-save-visited-interval 10)
 ;; Auto-save after some idle time
 (auto-save-visited-mode 1)
+
+(provide '3-init-settings)
+;;; 3-init-settings.el ends here

@@ -1,3 +1,12 @@
+;;; load-fira-code.el --- -*- lexical-binding: t; -*-
+
+;;; Commentary:
+;;
+;; `https://github.com/tonsky/FiraCode/wiki/Emacs-instructions'
+;;
+
+;;; Code:
+
 (require '1-functions)
 
 ;;; Font, with ligatures and everything
@@ -38,3 +47,6 @@
   (dolist (char-regexp alist)
     (set-char-table-range composition-function-table (car char-regexp)
                           `([,(cdr char-regexp) 0 font-shape-gstring]))))
+
+(provide 'load-fira-code)
+;;; load-fira-code.el ends here

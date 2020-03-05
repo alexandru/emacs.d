@@ -1,3 +1,13 @@
+;;; load-scala.el --- -*- lexical-binding: t; -*-
+
+;;; Commentary:
+;;
+;; NOTE — for metals to work, the binary has to be in PATH:
+;; `https://scalameta.org/metals/docs/editors/emacs.html'
+;;
+
+;;; Code:
+
 (use-package scala-mode
   :ensure t
   :mode "\\.s\\(cala\\|bt\\)$"
@@ -19,5 +29,5 @@
    ;; sbt-supershell kills sbt-mode:  https://github.com/hvesalai/emacs-sbt-mode/issues/152
    (setq sbt:program-options '("-Dsbt.supershell=false")))
 
-;; NOTE: for metals to work, the binary has to be in PATH
-;; https://scalameta.org/metals/docs/editors/emacs.html
+(provide 'load-scala)
+;;; load-scala.el ends here

@@ -1,3 +1,13 @@
+;;; load-markdown.el --- -*- lexical-binding: t; -*-
+
+;;; Commentary:
+;;
+;;  - `https://github.com/defunkt/markdown-mode'
+;;  - `https://github.com/jrblevin/deft'
+;;
+
+;;; Code:
+
 (use-package markdown-mode
   :ensure t
   :mode (("README\\.md\\'" . gfm-mode)
@@ -62,3 +72,6 @@
         deft-file-naming-rules '((noslash . "-")
                                  (nospace . "-")
                                  (case-fn . downcase))))
+
+(provide 'load-markdown)
+;;; load-markdown.el ends here

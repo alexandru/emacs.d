@@ -1,7 +1,12 @@
-;; --------------------------------------------------------------
+;;; 2-init-package-manager.el --- -*- lexical-binding: t; -*-
+
+;;; Commentary:
 ;;
-;; Configuration for the package manager
+;; Configuration for the package manager:
+;; `https://github.com/jwiegley/use-package'
 ;;
+
+;;; Code:
 
 (require 'package)
 (setq package-archives
@@ -51,3 +56,6 @@
   :config
   (auto-compile-on-load-mode)
   (auto-compile-on-save-mode))
+
+(provide '2-init-package-manager)
+;;; 2-init-package-manager.el ends here

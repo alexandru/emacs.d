@@ -1,3 +1,14 @@
+;;; load-javascript.el --- -*- lexical-binding: t; -*-
+
+;;; Commentary:
+;;
+;;  - `https://github.com/mooz/js2-mode'
+;;  - `https://github.com/emacs-typescript/typescript.el'
+;;  - `https://github.com/ananthakumaran/tide'
+;;
+
+;;; Code:
+
 (defun setup-tide-mode ()
   (interactive)
   (tide-setup)
@@ -26,3 +37,5 @@
   :config
   (add-hook 'typescript-mode-hook #'setup-tide-mode))
 
+(provide 'load-javascript)
+;;; load-javascript.el ends here

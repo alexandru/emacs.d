@@ -1,12 +1,21 @@
+;;; load-projectile.el ---  -*- lexical-binding: t; -*-
+
+;;; Commentary:
+;;
+;; Integration with:
+;; https://github.com/bbatsov/projectile
+;;
+
+;;; Code:
+
 (use-package projectile
   :ensure t
   :config
   (projectile-mode +1)
-  (define-key projectile-mode-map (kbd "M-s-ƒ") 'projectile-ag)
-  (define-key projectile-mode-map (kbd "M-s-f") 'projectile-ag)
+  (define-key projectile-mode-map (kbd "s-F") 'projectile-ag)
+  (define-key projectile-mode-map (kbd "M-F") 'projectile-ag)
   (define-key projectile-mode-map (kbd "s-p") 'projectile-find-file)
-  (define-key projectile-mode-map (kbd "M-p") 'projectile-command-map)
-)
+  (define-key projectile-mode-map (kbd "M-p") 'projectile-command-map))
 
 ;; (use-package neotree
 ;;   :ensure t
@@ -47,3 +56,6 @@
 ;;   :after treemacs persp-mode
 ;;   :ensure t
 ;;   :config (treemacs-set-scope-type 'Perspectives))
+
+(provide 'load-projectile)
+;;; load-projectile.el ends here

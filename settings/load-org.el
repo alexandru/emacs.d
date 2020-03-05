@@ -1,3 +1,11 @@
+;;; load-org.el --- -*- lexical-binding: t; -*-
+
+;;; Commentary:
+;;
+;; `https://orgmode.org/'
+;;
+
+;;; Code:
 
 (use-package org
   :ensure t
@@ -64,5 +72,5 @@
   (add-hook 'markdown-mode-hook 'toc-org-mode)
 )
 
-;;; org.el ends here
-
+(provide 'load-org)
+;;; load-org.el ends here

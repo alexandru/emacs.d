@@ -1,28 +1,43 @@
+;;; 0-load-everything.el --- -*- lexical-binding: t; -*-
+
+;;; Commentary:
+;;
+;; Order shouldn't matter if `use-package' is configured correctly,
+;; but I didn't manage to convert everything to it.
+;;
+
+;;; Code:
+
 (add-to-list 'load-path "~/.emacs.d/elpa/")
+(add-to-list 'load-path "~/.emacs.d/settings/")
 
-(load-file "~/.emacs.d/settings/1-functions.el")
-(load-file "~/.emacs.d/settings/2-init-package-manager.el")
-(load-file "~/.emacs.d/settings/3-init-settings.el")
-(load-file "~/.emacs.d/settings/4-global-keymap.el")
+(require '1-functions)
+(require '2-init-package-manager)
+(require '3-init-settings)
+(require '4-global-keymap)
 
-(load-file "~/.emacs.d/settings/company.el")
-(load-file "~/.emacs.d/settings/epa.el")
-(load-file "~/.emacs.d/settings/fira-code.el")
-(load-file "~/.emacs.d/settings/flycheck.el")
-(load-file "~/.emacs.d/settings/git.el")
-(load-file "~/.emacs.d/settings/graphviz.el")
-(load-file "~/.emacs.d/settings/haskell.el")
-(load-file "~/.emacs.d/settings/ido.el")
-(load-file "~/.emacs.d/settings/javascript.el")
-(load-file "~/.emacs.d/settings/lsp-mode.el")
-(load-file "~/.emacs.d/settings/markdown.el")
-(load-file "~/.emacs.d/settings/mmm.el")
-(load-file "~/.emacs.d/settings/org.el")
-(load-file "~/.emacs.d/settings/paredit.el")
-(load-file "~/.emacs.d/settings/projectile.el")
-(load-file "~/.emacs.d/settings/rainbow-delimiters.el")
-(load-file "~/.emacs.d/settings/rust.el")
-(load-file "~/.emacs.d/settings/scala-mode.el")
-(load-file "~/.emacs.d/settings/which-key.el")
-(load-file "~/.emacs.d/settings/yaml-mode.el")
-(load-file "~/.emacs.d/settings/yasnippets.el")
+(require 'load-company)
+(require 'load-epa)
+(require 'load-fira-code)
+(require 'load-flycheck)
+(require 'load-helm)
+(require 'load-lsp-mode)
+(require 'load-git)
+(require 'load-graphviz)
+(require 'load-haskell)
+(require 'load-ido)
+(require 'load-javascript)
+(require 'load-markdown)
+(require 'load-mmm)
+(require 'load-org)
+(require 'load-paredit)
+(require 'load-projectile)
+(require 'load-rainbow-delimiters)
+(require 'load-rust)
+(require 'load-scala)
+(require 'load-which-key)
+(require 'load-yaml)
+(require 'load-yasnippets)
+
+(provide '0-load-everything)
+;;; 0-load-everything.el ends here

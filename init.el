@@ -54,7 +54,7 @@
  '(org-agenda-files (quote ("~/Dropbox/Notes/org/")))
  '(package-selected-packages
    (quote
-    (color-theme-clar aquamacs-theme dracula-theme ripgrep ag auto-compile all-the-icons treemacs-magit treemacs-icons-dired dante treemacs-projectile treemacs toc-org powerline xclip x-clip neotree mmm-mode company-quickhelp deft markdown-toc company-lsp lsp-mode lsp-ui rainbow-delimiters auto-package-update intero yasnippet-snippets yasnippet yaml-mode sbt-mode scala-mode projectile paredit org-plus-contrib markdown-mode js2-mode tide typescript-mode graphviz-dot-mode magit fsharp-mode emojify cider clojure-mode better-defaults exec-path-from-shell use-package)))
+    (helm-config helm color-theme-clar aquamacs-theme dracula-theme ripgrep ag auto-compile all-the-icons treemacs-magit treemacs-icons-dired dante treemacs-projectile treemacs toc-org powerline xclip x-clip neotree mmm-mode company-quickhelp deft markdown-toc company-lsp lsp-mode lsp-ui rainbow-delimiters auto-package-update intero yasnippet-snippets yasnippet yaml-mode sbt-mode scala-mode projectile paredit org-plus-contrib markdown-mode js2-mode tide typescript-mode graphviz-dot-mode magit fsharp-mode emojify cider clojure-mode better-defaults exec-path-from-shell use-package)))
  '(show-paren-mode t)
  '(tool-bar-mode nil)
  '(typescript-indent-level 2))

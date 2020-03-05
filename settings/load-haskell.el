@@ -1,3 +1,13 @@
+;;; load-haskell.el --- -*- lexical-binding: t; -*-
+
+;;; Commentary:
+;;
+;;  - `https://github.com/haskell/haskell-mode'
+;;  - `https://github.com/jyp/dante'
+;;
+
+;;; Code:
+
 (use-package haskell-mode
   :ensure t
   :init
@@ -21,3 +31,6 @@
      '(lambda () (flycheck-add-next-checker 'haskell-dante
                   '(warning . haskell-hlint))))
   )
+
+(provide 'load-haskell)
+;;; load-haskell.el ends here

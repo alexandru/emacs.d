@@ -1,3 +1,12 @@
+;;; load-company.el --- -*- lexical-binding: t; -*-
+
+;;; Commentary:
+;;
+;; `https://github.com/company-mode/company-mode'
+;;
+
+;;; Code:
+
 (use-package company
   :ensure t
   :config
@@ -11,3 +20,6 @@
   :config
   (setq company-quickhelp-delay nil)
   (company-quickhelp-mode +1))
+
+(provide 'load-company)
+;;; load-company.el ends here
