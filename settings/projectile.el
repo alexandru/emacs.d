@@ -2,6 +2,8 @@
   :ensure t
   :config
   (projectile-mode +1)
+  (define-key projectile-mode-map (kbd "M-s-ƒ") 'projectile-ag)
+  (define-key projectile-mode-map (kbd "M-s-f") 'projectile-ag)
   (define-key projectile-mode-map (kbd "s-p") 'projectile-find-file)
   (define-key projectile-mode-map (kbd "M-p") 'projectile-command-map)
 )
@@ -38,10 +40,8 @@
   :after treemacs magit
   :ensure t)
 
-;; (use-package ag
-;;   :ensure t)
-;; (use-package ripgrep
-;;   :ensure t)
+(use-package ag :ensure t)
+(use-package ripgrep :ensure t)
 
 ;; (use-package treemacs-persp
 ;;   :after treemacs persp-mode
