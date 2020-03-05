@@ -38,10 +38,10 @@
   :after treemacs magit
   :ensure t)
 
-(use-package ag
-  :ensure t)
-(use-package ripgrep
-  :ensure t)
+;; (use-package ag
+;;   :ensure t)
+;; (use-package ripgrep
+;;   :ensure t)
 
 ;; (use-package treemacs-persp
 ;;   :after treemacs persp-mode
