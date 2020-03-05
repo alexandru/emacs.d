@@ -9,6 +9,7 @@
 ;;; Code:
 
 (require 'package)
+
 (setq package-archives
       '(("gnu-elpa"     . "https://elpa.gnu.org/packages/")
         ("org-mode"     . "https://orgmode.org/elpa/")
@@ -33,8 +34,10 @@
 (unless (package-installed-p 'use-package)
   (package-install 'use-package))
 
-(eval-when-compile
-  (require 'use-package))
+(eval-when-compile (require 'use-package))
+
+;; `https://github.com/jwiegley/use-package/issues/436'
+(require 'bind-key)
 
 ;; --------------------------------------------------------------
 ;;
