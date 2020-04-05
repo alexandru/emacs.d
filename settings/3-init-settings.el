@@ -35,10 +35,16 @@
   ;; (load-theme 'deeper-blue t nil)
   ;; (color-theme-initialize); deprecated
   (load-theme 'dracula t)
-  (unless (not window-system)
-    (set-background-color "#1a1c23")
-    (set-frame-parameter (selected-frame) 'alpha '(100 . 100))
-    (add-to-list 'default-frame-alist '(alpha . (100 . 100))))
+
+  ;; Color theme customizations, GUI vs text
+  (if (window-system)
+      (progn
+        (set-background-color "#1a1c23")
+        (set-frame-parameter (selected-frame) 'alpha '(100 . 100))
+        (add-to-list 'default-frame-alist '(alpha . (100 . 100))))
+    (progn
+      (set-background-color "#000000")))
+  
   ;(load-theme 'dracula t)
   ;;; Makes the window transparent...
   ;; (set-frame-parameter (selected-frame) 'alpha '(95 . 50))
