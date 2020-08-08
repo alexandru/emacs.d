@@ -41,7 +41,9 @@
       (progn
         (set-background-color "#1a1c23")
         (set-frame-parameter (selected-frame) 'alpha '(100 . 100))
-        (add-to-list 'default-frame-alist '(alpha . (100 . 100))))
+        (add-to-list 'default-frame-alist '(alpha . (100 . 100)))
+        ;; Set title bar dark on MacOS
+        (add-to-list 'default-frame-alist '(ns-appearance . dark)))
     (progn
       (set-background-color "#000000")))
   
@@ -58,7 +60,7 @@
   ;; Disable welcome message
   (setq inhibit-startup-message t)
   (setq inhibit-startup-echo-area-message t)
-  (setq initial-scratch-message nil)   
+  (setq initial-scratch-message nil)
   ;; open files in an existing frame instead of a new frame
   (setq ns-pop-up-frames nil)
   ;; iTerm2 mouse support
@@ -68,7 +70,7 @@
     (xterm-mouse-mode t)
     (global-set-key [mouse-4] (lambda () (interactive) (scroll-down 1)))
     (global-set-key [mouse-5] (lambda () (interactive) (scroll-up 1)))
-    (defun track-mouse (e)) 
+    (defun track-mouse (e))
     (setq mouse-sel-mode t)
     ;; Interacts with OS clipboard
     (use-package xclip :ensure t :config (xclip-mode 1)))

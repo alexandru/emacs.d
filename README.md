@@ -99,21 +99,21 @@ Also place this in `~/bin/run-emacsclient-cli`:
 #!/usr/bin/env bash
 
 export EMACSCLIENT_OPTS='-t'
-exec /Users/alex/bin/run-emacsclient "$@"
+exec "$HOME/bin/run-emacsclient" "$@"
 ```
 
 ### Bash Settings
 
 ```bash
 # Default editor
-export EDITOR="/Users/alex/bin/run-emacsclient-cli"
+export EDITOR="$HOME/bin/run-emacsclient-cli"
 export VISUAL="$EDITOR"
 export ALTERNATE_EDITOR="vim"
 
 # Editor aliases
-alias e="/Users/alex/bin/run-emacsclient-cli"
-alias ew="/Users/alex/bin/run-emacsclient"
-alias notes='/Users/alex/bin/run-emacsclient -e "(if (display-graphic-p) (x-focus-frame nil))" -e "(deft)" | grep -v nil'
+alias e="$HOME/bin/run-emacsclient-cli"
+alias ew="$HOME/bin/run-emacsclient"
+alias notes='$HOME/bin/run-emacsclient -e "(if (display-graphic-p) (x-focus-frame nil))" -e "(deft)" | grep -v nil'
 ```
 
 ### MacOS Apps
@@ -126,6 +126,6 @@ These are created and can be edited with the
 [MacOS Automator](https://support.apple.com/guide/automator/welcome/mac)
 and can be edited by it.
 
-They do nothing more than to execute `/Users/alex/bin/run-emacsclient`
+They do nothing more than to execute `$HOME/bin/run-emacsclient`
 (script described above) with certain parameters. The path to the
 script can be edited via Automator.

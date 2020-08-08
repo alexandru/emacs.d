@@ -17,11 +17,12 @@
 
   ;; https://emacs.stackexchange.com/questions/13189/github-flavored-markdown-mode-syntax-highlight-code-blocks/33497
   (setq markdown-fontify-code-blocks-natively t)
+  (setq markdown-enable-wiki-links 1)
 
   ;; https://gist.github.com/fredRos/0e3a845de95ec654538f
   (setq markdown-command
-        "pandoc -c file:///Users/alex/.emacs.d/media/gfm.css --from markdown+markdown_in_html_blocks -t html5 --mathjax --highlight-style pygments --standalone --shift-heading-level-by=-1")
-
+        "pandoc -c \"file://$HOME/.emacs.d/media/gfm.css\" --from markdown+markdown_in_html_blocks -t html5 --mathjax --highlight-style pygments --standalone --shift-heading-level-by=-1")
+  
   (add-to-list 'auto-mode-alist
                '("\\.md.erb\\'" . markdown-mode))
 
@@ -71,7 +72,8 @@
         deft-markdown-mode-title-level 1
         deft-file-naming-rules '((noslash . "-")
                                  (nospace . "-")
-                                 (case-fn . downcase))))
+                                 (case-fn . downcase)))
+  )
 
 (provide 'load-markdown)
 ;;; load-markdown.el ends here

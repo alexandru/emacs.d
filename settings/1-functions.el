@@ -148,5 +148,10 @@
       (select-window first-win)
       (if this-win-2nd (other-window 1))))))
 
+(defun sort-lines-nocase ()
+  (interactive)
+  (let ((sort-fold-case t))
+    (call-interactively 'sort-lines)))
+
 (provide '1-functions)
 ;;; 1-functions.el ends here
