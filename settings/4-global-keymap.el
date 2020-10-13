@@ -50,7 +50,7 @@
 (global-set-key (kbd "s-/") 'comment-dwim)
 
 ;; Shortcut for maximizing the window
-(global-set-key (kbd "s-+")
+(global-set-key (kbd "S-C =")
 		(lambda ()
 		  (interactive)
 		  (set-frame-parameter nil 'fullscreen 'maximized)))

@@ -21,9 +21,10 @@
         ("gnu-elpa"     . 10)
         ("org-mode"     . 9)
         ("melpa"        . 0)))
-(package-initialize)
 
-(when (not package-archive-contents) (package-refresh-contents))
+(when (version< emacs-version "27.0")
+  (package-initialize)
+  (when (not package-archive-contents) (package-refresh-contents)))
 
 ;; --------------------------------------------------------------
 ;;
