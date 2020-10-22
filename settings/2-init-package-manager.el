@@ -13,18 +13,17 @@
 (setq package-archives
       '(("gnu-elpa"     . "https://elpa.gnu.org/packages/")
         ("org-mode"     . "https://orgmode.org/elpa/")
-        ("melpa-stable" . "https://stable.melpa.org/packages/")
+        ;("melpa-stable" . "https://stable.melpa.org/packages/")
         ("melpa"        . "https://melpa.org/packages/"))
       package-archive-priorities
       '(
-        ("melpa-stable" . 20)
+        ;("melpa-stable" . 20)
         ("gnu-elpa"     . 10)
         ("org-mode"     . 9)
         ("melpa"        . 0)))
 
-(when (version< emacs-version "27.0")
-  (package-initialize)
-  (when (not package-archive-contents) (package-refresh-contents)))
+(package-initialize)
+(when (not package-archive-contents) (package-refresh-contents))
 
 ;; --------------------------------------------------------------
 ;;
