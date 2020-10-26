@@ -53,7 +53,7 @@
   ;; --------------------------------------------------------
   ;; Graphical options
   (tool-bar-mode -1)
-  (scroll-bar-mode -1)
+  ;(scroll-bar-mode -1)
   (menu-bar-mode -1)
   ;; Shows cursor column number (off by default)
   (setq column-number-mode t)
